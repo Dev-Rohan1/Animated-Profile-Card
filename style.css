@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.container {
+  background-image: linear-gradient(
+    83.2deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  color: #fff;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  margin: 50px auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.container:hover {
+  width: 350px;
+  height: 450px;
+  border-radius: 5px;
+}
+.container .wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .wrapper a img {
+  position: relative;
+  z-index: 999;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.container .wrapper a img.active {
+  width: 350px !important;
+  height: 450px !important;
+  border-radius: 5px;
+  border: none;
+}
+.container .wrapper .text {
+  display: none;
+}
+.container .wrapper .text.hide {
+  display: none;
+}
+.container .wrapper .text .name {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.container:hover .text {
+  display: block;
+}
+.container .wrapper .text .location {
+  font-size: 18px;
+  margin-top: -3px;
+  margin-bottom: 10px;
+}
+.container:hover .contant.hide {
+  display: none !important;
+}
+.container:hover .contant {
+  display: block !important;
+}
+.container .wrapper .contant {
+  display: none;
+  font-size: 17px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.container .wrapper .buttons {
+  display: none;
+}
+.container .wrapper .buttons.hide {
+  display: none !important;
+}
+.container:hover .buttons {
+  display: block;
+}
+.container .wrapper .buttons button {
+  padding: 7px 20px;
+  font-size: 15px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.container .wrapper .buttons button:hover,
+.container .wrapper .social-links i:hover {
+  transform: scale(0.95);
+}
+.container .wrapper .social-links {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.container .wrapper .social-links i {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.container:hover .social-links {
+  display: block;
+}
